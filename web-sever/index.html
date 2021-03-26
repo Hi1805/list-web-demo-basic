@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<body>
+  <p class='foo'>Đi chơi</p>
+  <p class='foo2'>Đi ăn </p>
+  <p class='foo'>
+   Làm gì thì làm
+  </p>
+  <script type ='text/javascript'>	
+  var data = document.getElementsByTagName('p');
+    for(let i =0;i<data.length;i++){
+      if(data[i].getAttribute('class')==='foo')
+        data[i].innerHTML+='<a href="coders.tokyo" target="_blank">coders.tokyo</a>' ;
+    }
+      console.log(data);
+  			</script>
+</body>
+</html>

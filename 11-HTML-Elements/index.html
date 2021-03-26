@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta  charset="UTF-8">
+	<title>Bai11</title>
+</head>
+<body>
+	<h1>TO DO List</h1>
+	<ol id="todo">
+	
+    </ol>
+    <input id="new-item" type="text" />;
+    <button onclick="addItem()">insert</button>
+    <button onclick="removeItem()">remove</button> 
+    <button onclick="update()">update</button> 
+    
+    <script type="text/javascript">
+            var htmlTodolist = document.getElementById('todo');
+            const input = document.getElementById('new-item');
+             let   todoList=[
+            'Go to bed',
+            'Go to school'
+            ]
+         htmlTodolist.innerHTML=todoList.join('');
+        function addItem(){
+           let newItem = input.value;
+            if(input.value===''){
+                alert('Name is NULL')
+            }
+            else todoList.push(newItem);
+            input.value = '';
+            render();
+         }
+        function removeItem() {
+            
+        }
+        function render(){
+           let content= todoList.map((item)=>"<li>"+item+"</li>");
+            htmlTodolist.innerHTML=content.join('');
+        }
+     
+	</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<html>
+    <head>
+      
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-firestore.js"></script>
+       <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+     <link rel="stylesheet" href="./style.css">
+
+    </head>
+    <body>
+        <h1>Cloud Cafe</h1>
+        <div class="content">
+
+            <form id="add-cafe-form">
+                <input type="text" name="name" placeholder="Cafe name" id="name22">
+                <input type="text" name="city" placeholder="Cafe city" id="city22">
+                <button >Add Cafe</button>
+                
+            </form>
+
+            <ul id="cafe-list">
+
+            </ul>
+        </div>
+        <script>
+              const firebaseConfig = {
+                    apiKey: "AIzaSyDPiIdAIVWZreXQfxeNVXeRRSXsthlQwKs",
+                    authDomain: "cloudcafe-97b78.firebaseapp.com",
+                    databaseURL: "https://cloudcafe-97b78.firebaseio.com",
+                    projectId: "cloudcafe-97b78",
+                    storageBucket: "cloudcafe-97b78.appspot.com",
+                    messagingSenderId: "90834552195",
+                    appId: "1:90834552195:web:9851700dd191fd966a22b6",
+                    measurementId: "G-HTTBVSBYYK"
+                };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            // firebase.analytics();
+           
+          //  console.log(firestore);// firestore là 1 đối tượng
+        </script>
+
+        <script src="app.js"></script>
+    </body>
+</html>

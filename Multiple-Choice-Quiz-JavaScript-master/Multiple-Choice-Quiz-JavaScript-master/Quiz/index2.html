@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="start" style="display: block;">Start Quiz</div>
+        <!-- Khung cau hoi -->
+        <div id="quiz" style="display: none;">
+            <!-- question  -->
+            <div id="question">
+                <!-- <p>Who Am I?</p> -->
+            </div>
+            <!-- img -->
+            <div id="qImg">
+                <!-- <img src="/Multiple-Choice-Quiz-JavaScript-master/img/html.png"> -->
+            </div>
+
+            <!-- answers -->
+            <div id="choices">
+                <div id="A" class="choice" onclick="checkAnswer('A')"></div>
+                <div id="B" class="choice" onclick="checkAnswer('B')"></div>
+                <div id="C" class="choice" onclick="checkAnswer('C')"></div>
+            </div>
+            <!-- count -->
+            <div id="timer">
+                <div id="counter"> </div>
+                <div id="btimeGauge"></div>
+                <div id="timeGauge"></div>
+            </div>
+
+            <!-- dap an -->
+            <div id="progress"></div>
+        </div>
+        <div id="scoreContainer" style="display: none;">
+            <!-- <img src="/Multiple-Choice-Quiz-JavaScript-master/img/1.png">
+            <p> 80%</p> -->
+        </div>
+    </div>
+
+    <script src="./quiz2.js"></script>
+</body>
+</html>

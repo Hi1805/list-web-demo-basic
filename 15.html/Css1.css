@@ -1,0 +1,14 @@
+table, th, td{
+    border: 2px solid silver;
+    border-collapse: collapse;
+    padding: 10px;
+}
+div{
+    margin-top: 100px;
+    margin-right: 550px;
+    margin-left: 700px;
+}
+input{
+    font-size: 150%;
+    padding: 10px;
+}
