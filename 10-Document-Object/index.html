@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Documents</title>
+</head>
+	<body>
+		<p class="p1">Day la Huy</p>
+		<p class="p1">Day la p2</p>
+		<p class =p3>Day la cua getElementsbyTagName</p>
+		<p id="ket qua">ket qua</p>
+	<button onclick="function1(),function2()">Thu di</button>
+	<script type="text/javascript">
+		function function1 () { 
+			var x = document.getElementsByClassName('p1');
+			x[0].innerHTML='da chay thanh cong';
+			x[1].innerHTML='Da chay lan khong index 2';
+		}
+		function function2() {
+			//let y = document.getElementsByTagName('p');
+			document.getElementById('ket qua').innerHTML = '123';
+			// document.getElementById('ket qua').innerHTML = y[1].innerHTML;
+			// document.getElementById('ket qua').innerHTML = y[2].innerHTML;
+		}
+		
+	</script>
+	</body>
+</html>

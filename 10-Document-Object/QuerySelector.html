@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+  <html>
+      <body>
+
+      <h2 class="example">Vi du 1="example"</h2>
+      <p class="example">A paragraph with class="example".</p> 
+
+    <p>Click the button to add a background color to the first element in the document with class="example".</p>
+
+      <button onclick="myFunction()">Try it</button>
+      <button onclick="function2()">QueryALL</button>
+
+
+        <script>
+         function myFunction() {
+          document.querySelector(".example").style.backgroundColor = "red";
+  //an vao button thi se ra mau do o h1
+  //no chi lay query dau tien
+         }
+          function function2() {
+              let x,i;
+            x = document.querySelectorAll(".example");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.backgroundColor = "green";
+            }
+          }
+    </script>
+
+</body>
+</html>

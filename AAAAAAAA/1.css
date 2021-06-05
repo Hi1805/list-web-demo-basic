@@ -1,0 +1,14 @@
+body {
+	background: url('https://goo.gl/jPMU7X');
+	background-size: cover;
+	background-repeat: none;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+html, body {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}

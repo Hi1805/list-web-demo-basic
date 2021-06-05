@@ -1,0 +1,57 @@
+body {
+     background-color: azure;
+
+}
+h1{
+    font: size 300; 
+    color:antiquewhite;
+    font-family: cursive;
+}
+.contact{
+    text-align: right;
+    font-size: larger;
+    font-family: cursive;
+}
+table{
+    font-family: arial, sans-serif;
+     border-collapse:10collapse;
+     width: 100%;
+
+}
+th{
+  color:red;
+}
+td, th {
+  border: 5px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+ 
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.VietNam{
+  background-color: red;
+  width: fit-content;
+}
+.World{
+  background-color: blue;
+  width: fit-content;
+}
+.maximlive{
+   text-align: center;
+   font-size: x-large;
+   text-align: right;
+}
+.live{
+  text-align: center;
+  font-size: xx-large;
+  font-family: cursive;
+  text-align: right;
+}
+.img{
+  width: 250pt;
+  height: 400pt;
+  left: auto;
+}

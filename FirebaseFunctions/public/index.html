@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tutorial Requests</title>
+    <!-- stylesheets -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css.css">
+</head>
+
+<body>
+    <!-- auth modal -->
+    <div class="auth open">
+        <div class="modal ">
+            <h2>Login</h2>
+            <form action="" class="login">
+                <input type="text" name="email" id="" placeholder="Email">
+                <input type="password" name="password" placeholder="Password">
+                <button value="button">Login</button>
+                <p class="error"></p>
+            </form>
+            <div>No account ? <a href="#" class="switch">Register instead</a></div>
+        </div>
+        <!-- đăng kí -->
+        <div class="modal " id="register">
+            <h2>Register</h2>
+            <form action="" class="register">
+                <input type="text" name="email" placeholder="Email">
+                <input type="password" name="password" placeholder="Password">
+                <button value="register">Register</button>
+                <p class="error"></p>
+            </form>
+            <div>Got an account ? <a href="" class="switch">Login instead</a> </div>
+        </div>
+        <!-- loader -->
+        <div class="loader active">
+            <img src="./loader.gif " id="img">
+        </div>
+    </div>
+
+
+
+
+    <!-- new request modal -->
+    <div class="new-request ">
+        <div class="modal">
+            <h2>Request a Tutorial</h2>
+            <form>
+                <input type="text" name="request" placeholder="Request...">
+                <button>Submit Request</button>
+                <p class="error"></p>
+                <div class="loader2">
+                    <img src="./anh-dong-dep-doc-dao_054957296.gif" id="img2">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <header>
+        <nav>
+            <a class="add-request">add request</a>
+            <a class="sign-out">sign out</a>
+        </nav>
+    </header>
+
+    <section class="content" id="app">
+        <h1>Tutorial Requests </h1>
+        <ul class="request-list">
+            <!-- <li>
+                <span class="text">Laravel 6 tutorial</span>
+                <div>
+                    <span class="votes">125</span>
+                    <i class="material-icons upvote " onclick="upvoteRequest()">arrow_upward</i>
+                </div>
+            </li> -->
+        </ul>
+        <!-- <button class="call">Say Hello</button> -->
+    </section>
+
+    <!-- update the version number as needed -->
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-functions.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyC4Ny2BBlTgI1jSmtfxh3qAErUZSP5q1LE",
+            authDomain: "cloud---functions---huy.firebaseapp.com",
+            databaseURL: "https://cloud---functions---huy.firebaseio.com",
+            projectId: "cloud---functions---huy",
+            storageBucket: "cloud---functions---huy.appspot.com",
+            messagingSenderId: "989128205248",
+            appId: "1:989128205248:web:caeacfc5eb328c091cde25",
+            measurementId: "G-K5VNMW8B37"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="js/app.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/request.js"></script>
+    <script src ="js/index.js"></script>
+</body>
+
+</html>
